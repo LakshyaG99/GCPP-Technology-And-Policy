@@ -133,3 +133,58 @@ h4 { font-size: 1.3rem; line-height: 1.4; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
 }
+
+/* Policy Simulation — handbook and step materials */
+.simulation-materials {
+  display: grid;
+  gap: .85rem;
+  max-width: 850px;
+  margin-top: 1.75rem;
+}
+
+.handbook-button {
+  width: 100%;
+  padding: 1.15rem 1.4rem;
+  font-size: 1.05rem;
+  background: var(--accent);
+  color: #fff;
+}
+
+.simulation-steps {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: .65rem;
+}
+
+.step-button {
+  width: 100%;
+  min-width: 0;
+  padding: .9rem .4rem;
+  justify-content: center;
+  text-align: center;
+  font-size: .85rem;
+  background: var(--surface);
+}
+
+.step-button:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+@media (max-width: 760px) {
+  .simulation-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .simulation-steps .step-button:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 430px) {
+  .simulation-steps {
+    grid-template-columns: 1fr;
+  }
+  .simulation-steps .step-button:last-child {
+    grid-column: auto;
+  }
+}
