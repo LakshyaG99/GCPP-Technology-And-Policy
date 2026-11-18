@@ -73,9 +73,9 @@ h4 { font-size: 1.3rem; line-height: 1.4; }
 .btn-card { border-color: transparent; background: rgba(230, 90, 120, .13); color: var(--accent-bright); align-self: flex-start; }
 
 /* Sections and cards */
-.section-heading { max-width: 800px; margin-bottom: 2.3rem; }
+.section-heading { max-width: 1000px; margin-bottom: 2.3rem; }
 .section-heading h2 { margin-bottom: .85rem; }
-.section-description { max-width: 800px; color: var(--muted); font-size: 1rem; }
+.section-description { max-width: 1000px; color: var(--muted); font-size: 1rem; }
 .programme-section { background: var(--bg); }
 .outputs-section { background: var(--bg-deep); border-top: 1px solid var(--border); }
 .resource-grid, .output-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.4rem; }
