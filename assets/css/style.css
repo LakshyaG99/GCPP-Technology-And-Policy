@@ -188,3 +188,28 @@ h4 { font-size: 1.3rem; line-height: 1.4; }
     grid-column: auto;
   }
 }
+
+/* Blog & Essay publication metadata */
+.article-metadata {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem 2rem;
+  margin-top: .5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: .78rem;
+  line-height: 1.6;
+}
+
+.article-metadata strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .article-metadata {
+    flex-direction: column;
+    gap: .25rem;
+  }
+}
